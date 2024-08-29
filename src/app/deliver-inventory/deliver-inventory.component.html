@@ -1,0 +1,11 @@
+
+<div class="container">
+  <h2>Entregar Inventario</h2>
+  @for (item of inventory; track item) {
+    <div class="item">
+      <div class="item-header">{{item['name']}}</div>
+      <div class="item-details">{{item['product_code']}}</div>
+      <button class="{{item['status'] == 'entregado'? 'entregado':'entregar'}}" (click)="changeStatus(item)">{{item['status']}}</button>
+    </div>
+  }
+</div>

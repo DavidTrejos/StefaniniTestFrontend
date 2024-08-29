@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Registro de inventario</h2>
+  <form [formGroup]="formGroup" (ngSubmit)="register()">
+      <input formControlName="username" type="text" name="username" placeholder="Nombre de usuario" required>
+      <div class="product-serial">
+          <select name="product" required>
+              <option value="" disabled selected>Productos</option>
+              <option value="product1">Producto 1</option>
+              <option value="product2">Producto 2</option>
+              <option value="product3">Producto 3</option>
+          </select>
+          <input formControlName="serial_number" type="text" name="serial_number" placeholder="Número de serie" required>
+      </div>
+      <input formControlName="date" type="text" name="date" placeholder="dd/mm/aaaa" onfocus="(this.type='date')" required>
+      <button type="submit">Guardar y enviar</button>
+  </form>
+</div>

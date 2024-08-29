@@ -22,46 +22,42 @@ h2 {
     color: #333;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input[type="text"], select {
+.item {
+    background-color: #fff;
     padding: 10px;
+    border-radius: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: calc(100% - 20px);
 }
 
-input[type="text"]:focus, select:focus {
-    border-color: #007bff;
-    outline: none;
+.item-header {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.product-serial {
-    display: flex;
-    justify-content: space-between;
-}
-
-.product-serial select {
-    width: 45%;
-}
-
-.product-serial input {
-    width: 45%;
+.item-details {
+    color: #555;
+    margin-bottom: 10px;
 }
 
 button {
     padding: 10px;
-    background-color: #007bff;
-    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
-button:hover {
+.entregar {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.entregar:hover {
     background-color: #0056b3;
+}
+
+.entregado {
+    background-color: #28a745;
+    color: #fff;
+    cursor: not-allowed;
 }
